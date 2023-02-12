@@ -87,7 +87,7 @@
 // console.log(sign);
 
 
-// console.log('************IMPRIMIR CONTINENTE********');
+console.log('************IMPRIMIR CONTINENTE********');
 
 
 // function continent (country:string):void{
