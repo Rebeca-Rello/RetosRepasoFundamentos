@@ -68,20 +68,20 @@ console.log('***********function add************');
 
 
 
-function add(myWords:string[]){
+// function add(myWords:string[]){
 
-    let array:number=0;
+//     let array:number=0;
 
-    for(let i =0; i<myWords.length;i++){
+//     for(let i =0; i<myWords.length;i++){
 
-       let suma:number= myWords[i].length
+//        let suma:number= myWords[i].length
 
-       array += suma
-    }
+//        array += suma
+//     }
 
-    return array
-}
+//     return array
+// }
 
 
 
-console.log(add(["Pablo", "Maria", "Marta"]));
+// console.log(add(["Pablo", "Maria", "Marta"]));
