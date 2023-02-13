@@ -1,4 +1,7 @@
+"use strict";
 // let sign:String =  "";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isEven = void 0;
 // function zodiac( day : number, month : number ){
 //     if( ( day >= 21 && month == 3) || (day <= 19 && month == 4 ) ){
 //         sign = ("Aries");
@@ -40,7 +43,7 @@
 // }
 // sign = zodiac(1,10)
 // console.log(sign);
-// console.log('************IMPRIMIR CONTINENTE********');
+console.log('************IMPRIMIR CONTINENTE********');
 // function continent (country:string):void{
 //     if(country == "Corea del Sur" || country == "China" || country == "Japon" ){
 //         console.log("Asia");
@@ -68,4 +71,5 @@ function isEven(number) {
         console.log("El numero es impar");
     }
 }
+exports.isEven = isEven;
 isEven(8);

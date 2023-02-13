@@ -2,86 +2,86 @@
 
 console.log('***********function evenNumbers*********');
 
-// function evenNumbers(num:number){
+function evenNumbers(num:number){
 
-//     for (let i = 0; i <= num; i++)
-//     {
+    for (let i = 0; i <= num; i++)
+    {
 
-//     if(i % 2 === 1){
+    if(i % 2 === 1){
 
-//         console.log(i);
-//     }
+        console.log(i);
+    }
    
-//     }
+    }
 
 
-// }
+}
 
-// evenNumbers(20)
+evenNumbers(20)
 
 
 
 console.log('***********function myRevert*********');
 
-// function myRevert(myArr:number[]){
+function myRevert(myArr:number[]){
     
 
-//     for (let i =myArr.length -1; i>=0; i--){
+    for (let i =myArr.length -1; i>=0; i--){
 
-//         myArr.push(myArr[i]);
+        myArr.push(myArr[i]);
 
-//         console.log(myArr[i]);
-//     }
+        console.log(myArr[i]);
+    }
 
  
 
-// }
+}
 
 
-// myRevert([1,2,3,4,5]);
+myRevert([1,2,3,4,5]);
 
 
 
 console.log('***********function isRainbow**********');
 
 
-// let colors:string[] =["red", "orange", "yellow", "green", "indigo", "blue", "violet", "black", "white", "brown"];
+let colors:string[] =["red", "orange", "yellow", "green", "indigo", "blue", "violet", "black", "white", "brown"];
 
-// function isRainbow(colors:string[]){
+function isRainbow(colors:string[]){
 
-// for(let i=0; i<colors.length; i++){
+for(let i=0; i<colors.length; i++){
 
-//  if(colors[i] == "red" || colors[i] == "orange" || colors[i] == "yellow" || colors[i] == "green" ||
-//   colors[i] == "indigo" || colors[i] == "violet" ||  colors[i] == "blue"){
+ if(colors[i] == "red" || colors[i] == "orange" || colors[i] == "yellow" || colors[i] == "green" ||
+  colors[i] == "indigo" || colors[i] == "violet" ||  colors[i] == "blue"){
 
-//     console.log("El color esta en el arcoiris");
-//  }
-//  else(console.log("El color no esta en el arcoiris"));
-// }
+    console.log("El color esta en el arcoiris");
+ }
+ else(console.log("El color no esta en el arcoiris"));
+}
 
-// }
+}
 
-// isRainbow(["brown"])
+isRainbow(["brown"])
 
 
 console.log('***********function add************');
 
 
 
-// function add(myWords:string[]){
+export function add(myWords:string[]){
 
-//     let array:number=0;
+    let array:number=0;
 
-//     for(let i =0; i<myWords.length;i++){
+    for(let i =0; i<myWords.length;i++){
 
-//        let suma:number= myWords[i].length
+       let suma:number= myWords[i].length
 
-//        array += suma
-//     }
+       array += suma
+    }
 
-//     return array
-// }
+    return array
+}
 
 
 
-// console.log(add(["Pablo", "Maria", "Marta"]));
+console.log(add(["Pablo", "Maria", "Marta"]));

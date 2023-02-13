@@ -129,7 +129,7 @@ console.log('***********function isEven*************');
 
 
 
-function isEven(number){
+export function isEven(number:number){
 
     if(number%2 == 0){
 
