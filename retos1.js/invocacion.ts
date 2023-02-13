@@ -1,32 +1,31 @@
 
-
-console.log('*********INVOCACION*********');
-
-import { add }  from "./buclesFor"
+import  {add} from "./buclesFor"
+// let ad = require('./buclesFor');
 
 import { isEven } from "./condicionales"
 
+console.log('*********INVOCACION*********');
+
+
 let array1 = ["Casa", "Coche", "Ciudad", "Cesta"];
-
 let array2 = ["Barco", "Baca", "Bicicleta", "Balon", "Bisiesto", "Brasil"];
-
 let array3 = ["Venezuela", "Veneno", "Voltaje"];
 
+console.log("************ ADD STRING ");
+console.log(add(array1));
+console.log(add(array2));
+console.log(add(array3));
 
 
-function INVOCACION1(isEven:string, add:number):void{
+function invoca (arr: string[]):void{
 
-    
+    let res = add(arr);
 
-          console.log(array1);
-          add:Number([]);
-          isEven:String();
-          
-       
-
-
+    return isEven(res)
 }
-INVOCACION1()
+console.log("***************INVOCA");
+invoca(array2)
 
 
-
+let resultado = add(array2);
+isEven(resultado)
