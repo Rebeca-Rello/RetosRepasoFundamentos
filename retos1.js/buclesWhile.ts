@@ -2,26 +2,27 @@
 console.log('********function hasEven******');
 
 
-// let array = [1,2,3,4,5,];
-// let par;
-// let i =0;
+let array = [1,2,3,4,5,];
+let par;
+let i =0;
 
-// function hasEven(myNums:number){
+function hasEven(myNums:number[]){
 
-// while (myNums[i]%2 == 0)
-// {
+let i:number =0;
+while ((i<myNums.length) && (myNums[i]%2 !== 0))
+{
+    i++
+}
+if(i<myNums.length){
 
-// par += array[i]
-// i++;
+        console.log("Hay un numero par")
+    }
 
-// }
-// console.log(par);
+    else
+{console.log(("No hay numero par"))}
+}
 
-// }
-
-// hasEven(array[i])
-
-///Me esta dando undefined, pero no logro sacar el porqué.
+hasEven(array)
 
 
 console.log('********function startWithM******');
