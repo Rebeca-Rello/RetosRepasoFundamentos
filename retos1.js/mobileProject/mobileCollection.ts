@@ -54,5 +54,18 @@ import { mobile} from "./mobile"
 
 
 
+    public printCollection():void{
+
+        for(let mobile of this.mobiles){
+
+            console.log(mobile.toString());
+        }      
+       
+        console.log("Price overall: " + this.getTotalPrice());
+        }  
+
+    }
+
      
-}
+
+

@@ -22,6 +22,7 @@ console.log('***********getPrice**********');
 console.log(myCollection.getTotalPrice());
 
 
+console.log(myCollection.printCollection());
 
 
 
