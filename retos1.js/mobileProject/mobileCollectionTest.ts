@@ -17,5 +17,12 @@ let myCollection = new MobileCollection (mobiles)
 
 
 console.log(myCollection.getMobiles());
+
+console.log('***********getPrice**********');
 console.log(myCollection.getTotalPrice());
+
+
+console.log(myCollection.printCollection());
+
+
 

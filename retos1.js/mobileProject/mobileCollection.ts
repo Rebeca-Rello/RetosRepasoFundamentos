@@ -6,12 +6,15 @@ import { mobile} from "./mobile"
 
     private mobiles: mobile []
     private totalPrice: number
-
+    
 
     constructor(mobiles:mobile[]){
 
         this.mobiles = mobiles;
-    }
+        this.totalPrice = this.totalPriceCalculation()
+
+    } 
+
 
     public setMobiles (newmobiles:mobile[]):void{
 
@@ -37,9 +40,32 @@ import { mobile} from "./mobile"
    
         }
 
+    private totalPriceCalculation():number{
+
+        let coste:number = 0;
+
+        for (let i=0; i <this.mobiles.length; i++)
+        {
+          coste += this.mobiles[i].getprice()
+        }
+
+        return coste
+    }
 
 
 
+    public printCollection():void{
+
+        for(let mobile of this.mobiles){
+
+            console.log(mobile.toString());
+        }      
+       
+        console.log("Price overall: " + this.getTotalPrice());
+        }  
+
+    }
 
      
-}
+
+
