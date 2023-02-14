@@ -23,10 +23,11 @@ function invoca (arr: string[]):void{
 
     return isEven(res)
 }
-console.log("***************INVOCA");
-invoca(array2)
+INVOCACION1()
 
 
 let resultado = add(array2);
 isEven(resultado)
 
+let resultado = add(array2);
+isEven(resultado)
