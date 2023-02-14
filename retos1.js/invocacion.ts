@@ -23,7 +23,7 @@ function invoca (arr: string[]):void{
 
     return isEven(res)
 }
-console.log("***************INVOCA");
+console.log("***************INVOCA*************");
 invoca(array2)
 
 
