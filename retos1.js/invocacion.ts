@@ -1,4 +1,5 @@
 
+
 import  {add} from "./buclesFor"
 // let ad = require('./buclesFor');
 
@@ -23,11 +24,9 @@ function invoca (arr: string[]):void{
 
     return isEven(res)
 }
-INVOCACION1()
+console.log("***************INVOCA*************");
+invoca(array2)
 
-
-let resultado = add(array2);
-isEven(resultado)
 
 let resultado = add(array2);
 isEven(resultado)
