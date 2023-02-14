@@ -1,6 +1,6 @@
 
 
-export class mobile{
+export class Mobile{
 
 private name: string
 private trademark: string
@@ -19,60 +19,60 @@ constructor(name:string, trademark:string, model:string, color: string, price:nu
 }
 
 
-public setname(newname:string):void{
+public setName(newname:string):void{
 
  this.name = newname;
  }
 
-public getname():string{
+public getName():string{
 
     return this.name
 
  }
 
 
- public settrademark(newtrademark:string):void{
+ public setTrademark(newtrademark:string):void{
 
     this.trademark = newtrademark;
     }
    
-public gettrademark():string{
+public getTrademark():string{
    
        return this.trademark
    
 }
 
    
-public setmodel(newmodel:string):void{
+public setModel(newmodel:string):void{
 
     this.model = newmodel;
     }
    
-public getmodel():string{
+public getModel():string{
    
        return this.model
    
 }
 
 
-public setcolor(newcolor:string):void{
+public setColor(newcolor:string):void{
 
         this.color= newcolor;
  }
        
-public getcolor():string{
+public getColor():string{
        
         return this.color
        
 }
     
 
-public setprice(newprice:number):void{
+public setPrice(newprice:number):void{
 
     this.price= newprice;
 }
    
-public getprice():number{
+public getPrice():number{
    
     return this.price
    
@@ -81,8 +81,10 @@ public toString():string{
 
 
        
-    return "The characteristics of the mobile" +" "+ this.name +" "+ "are:" + "\n" + "Name:" + this.name + "\n" + "Trademark:" +
-    this.trademark + "\n "+ "model:" + this.model  + "\n" + "Color:" + this.color + "\n" + "Price:" + this.price
+    return "The characteristics of the mobile" +" "+ this.name +" "+ 
+    "are:" + "\n" + "Name:" + this.name + "\n" + "Trademark:" +
+    this.trademark + "\n "+ "model:" + this.model  + "\n" + "Color:" +
+     this.color + "\n" + "Price:" + this.price
 
 
   

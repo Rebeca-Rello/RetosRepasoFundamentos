@@ -1,14 +1,14 @@
 
-import { mobile} from "./mobile"
+import { Mobile} from "./mobile"
 
 
  export class MobileCollection{
 
-    private mobiles: mobile []
+    private mobiles: Mobile []
     private totalPrice: number
     
 
-    constructor(mobiles:mobile[]){
+    constructor(mobiles:Mobile[]){
 
         this.mobiles = mobiles;
         this.totalPrice = this.totalPriceCalculation()
@@ -16,13 +16,13 @@ import { mobile} from "./mobile"
     } 
 
 
-    public setMobiles (newmobiles:mobile[]):void{
+    public setMobiles (newmobiles:Mobile[]):void{
 
      this.mobiles = newmobiles;
 
      }
 
-    public getMobiles():mobile[]{
+    public getMobiles():Mobile[]{
 
         return this.mobiles
 
@@ -40,19 +40,23 @@ import { mobile} from "./mobile"
    
         }
 
+    // Refactorizar el código para hacerlo con el método reduce de la clase array
+    // private totalPriceCalculation():number{
+
+    //     let coste:number = 0;
+
+    //     for (let i=0; i <this.mobiles.length; i++)
+    //     {
+    //       coste += this.mobiles[i].getprice()
+    //     }
+
+    //     return coste
+    // }
+
     private totalPriceCalculation():number{
 
-        let coste:number = 0;
-
-        for (let i=0; i <this.mobiles.length; i++)
-        {
-          coste += this.mobiles[i].getprice()
-        }
-
-        return coste
+        return this.mobiles.reduce((total, mobile)=>total + mobile.getprice(),0)
     }
-
-
 
     public printCollection():void{
 
