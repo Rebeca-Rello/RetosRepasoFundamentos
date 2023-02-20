@@ -51,7 +51,16 @@ distanceToOrigin():number{
 
 calculateDistance(anotherPoint:Point):number{
 
-    
+    const conx = this.x - anotherPoint.x;
+      const cony = this.y - anotherPoint.y;
+      return Math.sqrt(conx** 2 + cony ** 2);
+    }
+
 }      
 
-    }   
+
+  
+
+  
+
+     
