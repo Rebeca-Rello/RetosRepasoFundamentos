@@ -42,4 +42,16 @@ toString() {
 }       
 
 
-    }
+distanceToOrigin():number{
+
+   return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2));
+   
+      }
+  
+
+calculateDistance(anotherPoint:Point):number{
+
+    
+}      
+
+    }   
